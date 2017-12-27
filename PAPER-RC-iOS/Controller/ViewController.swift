@@ -10,16 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var jmdnsHelper: JmdnsHelper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        jmdnsHelper = JmdnsHelper()
+        jmdnsHelper.onStart()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
